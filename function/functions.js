@@ -193,3 +193,113 @@
 // }
 
 // console.log(firstOccu("jahduhuhuajifiaaa", "a"));
+
+
+//Sedmi zadatak
+
+// function convertToArray(str) {
+//     var newArra = [];
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === "") {
+//             newArra[newArra.l] = null
+//         } else {
+//             newArra[newArra.length] = str[i]
+//         }
+//     } return newArra;
+// }
+
+// console.log(convertToArray("hftyhdrf hkhvf"))
+
+
+//Osmi zadatak
+
+// function isPrime(num){
+//     if(typeof num !== "number") return false
+//     if(num <=1) return false
+//     for (let i = 2; i < num; i++) {
+//         if(num % i === 0) return false 
+//     }return true
+// }
+
+// console.log(isPrime(13));
+
+
+//Deveti zadatak
+
+// function separateStr(str, s) {
+//     var output = "";
+//     if (s === undefined) s = "_";
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i] === " ") {
+//             output += s
+//         } else {
+//             output += str[i]
+//         }
+//     } return output
+// }
+// console.log(separateStr("marina marina", "+"));
+
+
+//Deseti zadatak
+
+// function getCharacter(str, n) {
+//     if (str.length <= n) return str
+//     var output = "";
+//     for (let i = 0; i < n; i++) {
+//         output += str[i]
+//     }return output + "..."
+// }
+
+// console.log(getCharacter("uifugunn", 3));
+
+
+//Jedanesti zadatak
+
+// var test = ["1", "21", undefined, "42", "1e+3", Infinity]
+
+// function arrayOfNumbers(arr) {
+//     var output = [];
+//     for (let i = 0; i < arr.length; i++) {
+//         var c = arr[i] * 1
+//         if (c !== c || c === -Infinity || c === Infinity)
+//             continue;
+//         output[output.length] = c
+//     } return output
+// }
+
+// console.log(arrayOfNumbers(test));
+
+
+//Dvanesti zadatak
+
+// function caltYears(year, sex) {
+//     var age = 2021 - year;
+//     var ageLimit = sex === "m" ? 65 : 60
+
+//     if (age >= ageLimit){
+//         console.log("Retired");
+//     }else{
+//         console.log(ageLimit - age);
+//     }
+// }
+
+
+// caltYears(1994, "m");
+
+
+//Trinesti zadatak
+
+// function humanizeNumber(num) {
+//     var string =  num + ''
+//     if (string[string.length - 1] * 1 > 3 || string[string.length -1] === "0" || string[string.length -2] === "1") {
+//         return string + "th"
+//     } else if (string[string.length - 1] === "1") {
+//         return string + "st"
+//     } else if (string[string.length - 1] === "2") {
+//         return string + "nd"
+//     } else if (string[string.length - 1] === "3") {
+//         return string + "rd"
+//     }
+// }
+
+// console.log(humanizeNumber(2230)); 
