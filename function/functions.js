@@ -303,3 +303,126 @@
 // }
 
 // console.log(humanizeNumber(2230)); 
+
+
+//TRECE VEZBANJE
+
+//Prvi zadatak
+
+// function insert(str1, str2, pos) {
+//     var output = '';
+//     pos = pos === undefined ? 1 : pos
+//     for (let i = 0; i < str1.length; i++) {
+//         if (i === pos) {
+//             output += str2
+//         }
+//         output += str1[i]
+//     } return output
+// }
+// console.log(insert("My random string", "js ",10));
+
+
+//Drugi zadatak
+
+// function tReX(niz) {
+//     var output = '';
+//     for (let i = 0; i < niz.length; i++) {
+//         var element = niz[i] + ' '
+//         if (element === undefined ||
+//             element === null ||
+//             element !== element ||
+//             element === Infinity){
+//             continue
+// }
+//         output += element
+//     } return output
+// }
+// var test = [NaN, 0, 15, false, -22, '', undefined, 47, null]
+// console.log(tReX(test));
+
+
+//Treci zadatak
+
+// function filter(niz){
+//     var output = [];
+//     for (let i = 0; i < niz.length; i++) {
+//         if(niz[i]){
+//         output[output.length] = niz[i];
+//         }
+//     }return output
+// }
+// console.log(filter([NaN, 0, 15, false, -22, '', undefined, 47, null]));
+
+
+//Cetvrti zadatak
+
+// function reverse(num) {
+//     var strNum = "" + num;
+//     var output = "";
+//     for (let i = strNum.length - 1; i >= 0; i--) {
+//         output += strNum[i]
+//     } return output
+// }
+// console.log(reverse(12345));
+
+
+//Peti zadatak
+
+// function getLast(niz, n) {
+//     n = n === undefined ? 1 : n;
+//     var output = [];
+
+//     for (let i = niz.length - n; i < niz.length; i++) {
+//         output[output.length] = niz[i]
+//     } return output
+// }
+// console.log(getLast([1, 2, 3, 4, 5, 6, 7],3));
+
+
+//Sesti zadatak
+
+// function dino(num, ele) {
+//     var output = [];
+//     ele = ele === undefined ? null : ele
+
+//     for (let i = 0; i < num; i++) {
+//         output[i] = ele
+//     } return output;
+// }
+
+// console.log(dino(4));
+
+
+//Sedmi zadatak
+
+// function isPerfect(num) {
+//     if (num < 1) return false
+//     var suma = 1;
+
+//     for (let i = 2; i < num / 2; i++) {
+//         if (num % i === 0) {
+//             suma += i
+//         }
+//     }return num === suma
+// }
+
+//     console.log(isPerfect(496));
+
+
+//Osmi zadatak
+
+// function find(sen, word) {
+//     var searchIndex = 0
+//     var count = 0
+
+//     for (let i = 0; i < sen.length; i++) {
+//         if (sen[i] === word[searchIndex]) {
+//             searchIndex++
+//             if (searchIndex === word.length) {
+//                 searchIndex = 0
+//                 count++
+//             }
+//         }
+//     } console.log("The word" + word + "was found " + count + " times");
+// }
+// find("The quick brown fox jumps over the lazy dog", " fox ")
