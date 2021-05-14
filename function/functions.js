@@ -426,3 +426,120 @@
 //     } console.log("The word" + word + "was found " + count + " times");
 // }
 // find("The quick brown fox jumps over the lazy dog", " fox ")
+
+
+//Deveti zadatak
+
+// function hideEmail(str) {
+//     var output = "";
+//     var shouldCopy = true;
+//     for (let i = 0; i < str.length; i++) {
+//         if (i === 3) {
+//             shouldCopy = false
+//             output += "..."
+//         }
+//         if (str[i] === "@") shouldCopy = true
+
+//         if (shouldCopy) {
+//             output += str[i]
+//         }
+//     } return output
+// }
+// console.log(hideEmail("marina@gmail.com"));
+
+
+//Deseti zadatak
+
+// function dino(niz) {
+//     var maxFrequency = 0
+//     var maxElement = null;
+//     var counter = 0;
+//     var alreadyChecked = []
+//     for (let i = 0; i < niz.length; i++) {
+
+//         for (let j = i; j < niz.length; j++) {
+//             if (niz[j] === currentElement) {
+//                 counter++
+//             }
+//         }
+
+//         if (counter > maxFrequency) {
+//             maxFrequency = counter
+//             maxElement = niz[i]
+//         }
+// counter = 0
+//     }return maxElement
+// }
+
+
+
+
+// function getCounter(counters, element) {
+//     for (let i = 0; i < counters.length; i++) {
+//         if (counters[i][0] === element) {
+//             return counters[i]
+//         }
+//     } return null
+// }
+
+// function dino(niz) {
+//     var counter = [
+//         [currentElement, counter],
+//     ]
+//     for (let i = 0; i < niz.length; i++) {
+//         var currentElement = niz[i];
+//         var counter = getCounter(counters, currentElement)
+//         if (counter) {
+//             counter[1] = counter[1] + 1
+//         } else {
+//             counters[counter.length] = [currentElement, 1]
+//         }
+//     }
+//     var max = 0;
+//     var maxElement;
+//     for (let i = 0; i < counters; i++) {
+//         if (counters[i][1]) {
+//             max = counters[i][0]
+//             maxElement = counters[i][0]
+//         }
+//     } console.log(counters,max,maxElement);
+// }
+
+
+//PETO VEZBANJE
+
+//Prvi zadatak
+
+// function swap(niz) {
+//     var min = niz[0];
+//     var max = niz[0];
+//     var posMin = 0;
+//     var posMax = 0;
+
+//     for (let i = 0; i < niz.length; i++) {
+//         if (niz[i] > max) {
+//             max = niz[i]
+//             posMax = i
+//         }
+//         if (niz[i] < max) {
+//             min = niz[i]
+//             posMin = i
+//         }
+//     }
+//     niz[posMin] = max
+//     niz[posMax] = min
+//     return niz
+// }
+// console.log(swap([3, 500, 12, 149, 53, 414, 1, 19]));
+
+
+//Drugi zadatak
+
+// function doStuff(niz) {
+//     var output = []
+//     for (let i = 0; i < niz.length; i++) {
+//         output[i] = niz[i] / 2 + 5 || 20;
+//     }
+//     return output
+// }
+// console.log(doStuff([3,500,-10,149,53,414,1,19]));
