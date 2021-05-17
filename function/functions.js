@@ -543,3 +543,41 @@
 //     return output
 // }
 // console.log(doStuff([3,500,-10,149,53,414,1,19]));
+
+
+//Treci zadatak
+
+// var students= ["pera","mika","marina","zmika","daca","vlaca"];
+// var points = [59,39,83,72,99,51];
+// var ocena;
+
+// for (let i = 0; i < students.length; i++) {
+//     students[i]
+//     points[i]
+
+// function gradeStudents() {
+//     if (points[i] > 90) {
+//         ocena = 10
+//     } else if (points[i] > 80) {
+//         ocena = 9
+//     } else if (points[i] > 70) {
+//         ocena = 8
+//     } else if (points[i] > 60) {
+//         ocena = 7
+//     } else if (points[i] > 50) {
+//         ocena = 6
+//     } else {
+//         ocena = 5
+//     }
+//     if (ocena > 5)
+//         console.log(students + " dobili " + points + " i dobili ocenu " + ocena);
+// }
+// }
+
+
+
+
+// var a = 5;
+// var b = a++;
+// console.log(a);
+// console.log(b);
