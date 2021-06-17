@@ -4,14 +4,18 @@ const Hero = (props) => {
 
     return (
 
-        <div className='heroCard'>
-            <span className='name'>{props.name}</span>
-            <img src={props.img} alt='no-img'></img>
-            <div className='btnDiv'>
-                <button>Info</button>
-                <button>Add</button>
+        <div className='wrapper'>
+
+            <div className='heroCard'>
+                <p className='name'>{props.name}</p>
+                <img src={props.img} alt='no-img'></img>
+                <div className='btnDiv'>
+                    <button className='btn1'>Info</button>
+                    <button className='btn2'>Add</button>
+                </div>
             </div>
         </div>
+
     )
 }
 

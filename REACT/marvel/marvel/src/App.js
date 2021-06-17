@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import Header from './Header';
 import HeroTeam from './HeroTeam';
+import AddHero from './AddHero'
 import Hero from './Hero';
 import getData from './fetch';
 import './App.css';
@@ -19,8 +20,9 @@ function App() {
   return (
     <div className='app'>
       <Header />
-      <HeroTeam data={people} />
-      <Hero/>
+      <HeroTeam data={people}>
+        <AddHero />
+      </HeroTeam>
     </div>
   );
 }
