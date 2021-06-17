@@ -1,0 +1,29 @@
+body,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    border: 2px solid black;
+    height: 50px;
+    margin-bottom: 20px;
+}
+p{
+    font-size: 25px;
+}
+.search{
+    display: flex;
+    justify-content: space-between;
+}
+input{
+    border: 2px solid black;
+    margin-left: 10px;
+    margin-right: 10px;
+} 
+button{
+    padding: auto 25px;
+    border-radius: 7px;
+}
+.right{
+    margin-right: 150px;
+}   
