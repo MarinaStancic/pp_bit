@@ -1,4 +1,5 @@
 import './Hero.css';
+import {Link} from 'react-router-dom';
 
 const Hero = (props) => {
 
@@ -10,10 +11,11 @@ const Hero = (props) => {
                 <p className='name'>{props.name}</p>
                 <img src={props.img} alt='no-img'></img>
                 <div className='btnDiv'>
-                    <button className='btn1'>Info</button>
+                   <Link to={`/hero/${props.id}`}><button className='btn1'>Info</button></Link>
                     <button className='btn2'>Add</button>
                 </div>
             </div>
+
         </div>
 
     )

@@ -1,3 +1,7 @@
+.wrap-container{
+    display: flex;
+    flex-wrap: wrap;
+}
 .heroTeamContainer{
     display: flex;
     flex-wrap: wrap;
